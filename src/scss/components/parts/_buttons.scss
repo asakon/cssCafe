@@ -1,0 +1,8 @@
+@use "../../base/variables" as var;
+
+.button {
+    padding: 7px 12px;
+    color: var.$color-reverse-line;
+    background-color: var.$color-reverse-fill;
+    font-size: 14px;
+}
