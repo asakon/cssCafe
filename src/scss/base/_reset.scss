@@ -1,0 +1,26 @@
+@use "lib/sanitize";
+
+@use "./variables" as var;
+
+:root, html, body {
+    background-color: var.$color-base;
+    color: var.$color-main-text;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: var.$color-main-text;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var.$color-link;
+}
