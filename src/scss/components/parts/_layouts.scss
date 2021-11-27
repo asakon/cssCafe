@@ -1,0 +1,25 @@
+@use "sass:math";
+@use "../../base/variables" as var;
+
+.l-column {
+    flex: 0 1 var.$base-content-width;
+    max-width: var.$base-content-width;
+    margin: 0 auto;
+    padding: 0 var.$space-unit;
+}
+
+.l-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.l-halfColumn {
+    flex: 1 0 0px;
+    max-width: math.div( (var.$base-content-width - var.$column-space) ,2);
+    margin-right: var.$column-space;
+    &:nth-child(even) {
+        margin-right: 0;
+    }
+}
