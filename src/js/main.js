@@ -1,6 +1,6 @@
 /* main.js */
-import './lib/lodash.min.js';
-import './lib/flipsnap.js';
+// import './lib/lodash.min.js';
+// import './lib/flipsnap.js';
 
 /* メニュー */
 (function(){
