@@ -1,0 +1,9 @@
+@use "../../base/variables" as var;
+
+.Section {
+    margin-bottom: var.$space-unit * 2;
+    
+    &__item {
+        margin-bottom: var.$space-unit * 2;
+    }
+}
