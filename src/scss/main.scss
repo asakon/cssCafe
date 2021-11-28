@@ -2,11 +2,13 @@
 
 @use "./base/variables";
 @use "./base/reset";
+
+@use "./components/parts/layouts";
+
 @use "./components/common/header";
 @use "./components/common/menu";
 @use "./components/common/section";
 @use "./components/entryPanel";
 @use "./components/imageSlide";
-@use "./components/parts/layouts";
 @use "./components/parts/buttons";
 @use "./components/parts/labels";
