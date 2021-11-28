@@ -1,0 +1,29 @@
+@use "../../base/variables" as var;
+
+.sectionLabel {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    padding-top: var.$space-unit;
+    padding-bottom: var.$space-unit * 2;
+    color: var.$color-main-text;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        flex: 1 0 10%;
+        height: 0;
+        border-bottom: 1px solid var.$color-main-text;
+    }
+    &::before {
+        margin-right: 22px;
+    }
+    &::after {
+        margin-left: 22px;
+    }
+
+}
