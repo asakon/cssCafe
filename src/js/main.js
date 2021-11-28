@@ -1,6 +1,6 @@
 /* main.js */
-// import './lib/lodash.min.js';
-// import './lib/flipsnap.js';
+// @prepros-prepend ./lib/lodash.min.js;
+// @prepros-prepend ./lib/flipsnap.js;
 
 /* メニュー */
 (function(){
