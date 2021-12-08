@@ -1,11 +1,16 @@
 @use "sass:math";
 @use "../../base/variables" as var;
+@use "../../base/mixin" as mix;
 
 .l-column {
     flex: 0 1 var.$base-content-width;
     max-width: var.$base-content-width;
     margin: 0 auto;
     padding: 0 var.$space-unit;
+    @include mix.mq-sp {
+        padding: 0 var.$sp-space-unit * 2;
+        width: auto;
+    }
 }
 
 .l-row {
@@ -22,6 +27,13 @@
     &:nth-child(even) {
         margin-right: 0;
     }
+
+    @include mix.mq-sp {
+        flex: 1 1 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+    
 }
 
 .l-quaterColumn{
