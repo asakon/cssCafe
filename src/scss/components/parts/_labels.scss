@@ -28,5 +28,13 @@
     &::after {
         margin-left: 22px;
     }
+}
 
+// ロゴ
+.logo {
+    display: inline-block;
+    padding: 10px 0;
+    color: var.$color-main-text;
+    @include mix.menu-font;
+    font-size: 26px;
 }
