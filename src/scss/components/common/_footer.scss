@@ -1,0 +1,28 @@
+@use "../../base/variables" as var;
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: var.$space-unit * 2 auto 0;
+    padding: var.$space-unit 0;
+    background-color: var.$color-black;
+    color: var.$color-link;
+    &__head {
+        flex: 2 1 50%;
+    }
+    &__head,
+    &__body {
+        padding-right: var.$space-unit;
+    }
+    &__body,
+    &__foot {
+        flex: 1 1 25%;
+    }
+    a {
+        color:var.$color-link;
+        &:hover {
+            color: var.$color-white;
+        }
+    }
+}
