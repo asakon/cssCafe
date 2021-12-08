@@ -5,6 +5,9 @@
 
 @use "./components/parts/layouts";
 
+@use "./components/parts/buttons";
+@use "./components/parts/labels";
+
 @use "./components/common/header";
 @use "./components/common/menu";
 @use "./components/common/section";
@@ -15,7 +18,6 @@
 @use "./components/overlayPanel";
 @use "./components/iconPanel";
 @use "./components/newsList";
-@use "./components/parts/buttons";
-@use "./components/parts/labels";
 
+// ページ固有
 @use "./pages/index";
