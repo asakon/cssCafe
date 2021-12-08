@@ -50,6 +50,9 @@
     flex: 1 1 50%;
     margin: 0;
     padding: 0;
+    @include mix.mq-sp {
+        flex: 1 1 100%;
+    }
 }
 
 .l-fitImg {

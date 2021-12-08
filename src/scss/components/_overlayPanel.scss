@@ -31,5 +31,8 @@
     }
     &__body {
         margin: 16px auto;
+        @include mix.mq-sp {
+            display: none;
+        }
     }
 }
