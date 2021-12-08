@@ -26,7 +26,7 @@
 
 .l-quaterColumn{
     flex: 1 0 0px;
-    max-width: (var.$base-content-width - var.$column-space * 3) / 4;
+    max-width: math.div( (var.$base-content-width - var.$column-space * 3), 4);
     margin-right: var.$column-space;
     &:nth-child(4n) {
         margin-right: 0;
