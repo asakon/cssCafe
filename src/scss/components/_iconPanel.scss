@@ -4,6 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__icon {
+        margin-bottom: var.$space-unit;
+        padding: var.$sp-space-unit;
+        font-size: 26px;
+        color: var.$color-link;
+    }
     &__head {
         padding: var.$space-unit;
         font-size: 18px;
