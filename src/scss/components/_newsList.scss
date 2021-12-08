@@ -1,0 +1,17 @@
+@use "sass:math";
+@use "../base/variables" as var;
+
+.NewsList {
+    display: table;
+    border-spacing: 0px math.div(var.$space-unit, 2);
+    &__item {
+        display: table-row;
+    }
+    &__head {
+        display: table-cell;
+        padding-right: var.$column-space;
+    }
+    &__body {
+        display: table-cell;
+    }
+}
