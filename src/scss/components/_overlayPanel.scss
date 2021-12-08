@@ -1,4 +1,5 @@
 @use "../base/variables" as var;
+@use "../base/mixin" as mix;
 
 .OverlayPanel {
     $root: &;
@@ -18,10 +19,12 @@
         margin: 0 10%;
         padding: 24px 36px;
         border: 2px solid var.$color-white;
+        @include mix.title-font;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: .1em;
         font-size: 24px;
+
         #{$root}:hover & {
             background-color: rgba(255, 255, 255, 0.2);
         }

@@ -1,0 +1,12 @@
+@use "variables" as var;
+
+// fonts
+@mixin menu-font() {
+    font-family: var.$font-sub;
+    font-weight: 300;
+}
+
+@mixin title-font() {
+    font-family: var.$font-sub;
+    font-weight: 400;
+}
