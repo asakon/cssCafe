@@ -1,4 +1,5 @@
 @use "../base/variables" as var;
+@use "../base/mixin" as mix;
 
 .ImageSlide {
     position: relative;
@@ -26,6 +27,10 @@
         top: -40px;
         display: flex;
         justify-content: center;
+        
+        @include mix.mq-sp {
+            top: -20px;
+        }
     }
     &__dot {
         display: block;
@@ -41,8 +46,16 @@
         &:last-child {
             margin-right: 0;
         }
+        &:hover {
+            background-color: rgba(var.$color-black, .7);
+        }
         &.isActive {
             background-color: var.$color-black;
+        }
+        @include mix.mq-sp {
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
         }
     }
 }

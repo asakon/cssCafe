@@ -13,12 +13,12 @@
 
 // メディアクエリ
 @mixin mq-sp($max: var.$sp-max-width) {
-    @media screen and (max-width: #{max}) {
+    @media screen and (max-width: #{$max}) {
         @content;
     }
 }
 @mixin mq-pc($min: var.$pc-min-width) {
-    @media screen and (min-width: #{min}) {
+    @media screen and (min-width: #{$min}) {
         @content;
     } 
 }
