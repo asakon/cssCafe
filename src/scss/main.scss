@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@use "./base/lib/lato/lato";
+
 @use "./base/variables";
 @use "./base/reset";
 
@@ -24,3 +26,4 @@
 
 // ページ固有
 @use "./pages/index";
+
