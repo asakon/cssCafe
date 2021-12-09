@@ -25,4 +25,9 @@
         z-index: -1;
         opacity: 0;
     }
+
+    &__wrapper {
+        left: 0;
+        width: 100%;
+    }
 }
