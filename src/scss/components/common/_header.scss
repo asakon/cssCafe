@@ -1,3 +1,6 @@
+@use "../../base/mixin" as mix;
+@use "../../base/variables" as var;
+
 .Header {
     display: flex;
     justify-content: flex-start;
@@ -10,5 +13,14 @@
 
     &__body {
         flex: 3 1 auto;
+    }
+
+    // スマートフォン用ハンバーガーボタン
+    &__button {
+        color: var.$color-main-text;
+        font-size: 22px;
+        @include mix.mq-pc {
+            display: none;
+        }
     }
 }
