@@ -1,15 +1,25 @@
 @use "sass:math";
 @use "../base/variables" as var;
+@use "../base/mixin" as mix;
 
 .NewsList {
     display: table;
     border-spacing: 0px math.div(var.$space-unit, 2);
+    
+    @include mix.mq-sp {
+        font-size: 12px;
+    }
+
     &__item {
         display: table-row;
     }
     &__head {
         display: table-cell;
         padding-right: var.$column-space;
+        
+        @include mix.mq-sp {
+            padding-right: var.$sp-space-unit;
+        }
     }
     &__body {
         display: table-cell;
