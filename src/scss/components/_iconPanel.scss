@@ -1,22 +1,49 @@
 @use "../base/variables" as var;
+@use "../base/mixin" as mix;
 
 .IconPanel {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mix.mq-sp {
+        display: block;
+        padding: var.$space-unit 0;
+    }
+
     &__icon {
         margin-bottom: var.$space-unit;
         padding: var.$sp-space-unit;
         font-size: 26px;
         color: var.$color-link;
+        
+        @include mix.mq-sp {
+            float: left;
+            margin-bottom: 0;
+            padding-left: 0;
+            width: 52px;
+        }
     }
     &__head {
         padding: var.$space-unit;
         font-size: 18px;
         text-align: center;
+
+        @include mix.mq-sp {
+            margin-left: 52px;
+            padding: 0 0 15px;
+            text-align: left;
+            font-size: 16px;
+        }
     }
     &__body {
         max-width: 100%;
         padding: var.$space-unit * 1.5;
+
+        @include mix.mq-sp {
+            margin-left: 52px;
+            padding: 0;
+            font-size: 12px;
+        }
     }
 }
