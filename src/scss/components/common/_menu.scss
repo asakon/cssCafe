@@ -1,4 +1,5 @@
 @use "../../base/mixin" as mix;
+@use "../../base/variables" as var;
 
 .Menu {
     display: flex;
@@ -12,5 +13,16 @@
     }
     &--sub {
         flex-direction: column;
+    }
+}
+
+.SpMenu {
+    @include mix.mq-sp {
+        position: fixed;
+        top: var.$sp-space-unit;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
     }
 }
