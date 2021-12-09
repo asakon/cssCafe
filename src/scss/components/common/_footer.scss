@@ -1,4 +1,5 @@
 @use "../../base/variables" as var;
+@use "../../base/mixin" as mix;
 
 .Footer {
     display: flex;
@@ -10,14 +11,24 @@
     color: var.$color-link;
     &__head {
         flex: 2 1 50%;
+        @include mix.mq-sp {
+            flex: 1 1 100%;
+        }
     }
     &__head,
     &__body {
         padding-right: var.$space-unit;
+        @include mix.mq-sp {
+            margin-bottom: var.$sp-space-unit;
+            padding-right: 0;
+        }
     }
     &__body,
     &__foot {
         flex: 1 1 25%;
+        @include mix.mq-sp {
+            flex: 1 1 100%;
+        }
     }
     a {
         color:var.$color-link;
