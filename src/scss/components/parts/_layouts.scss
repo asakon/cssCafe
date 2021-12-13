@@ -36,6 +36,21 @@
     
 }
 
+.l-tripartitionColumn {
+    flex: 1 0 0px;
+    max-width: math.div((var.$base-content-width - var.$column-space * math.div(2, 3)) ,3);
+    margin-right: var.$column-space * math.div(2, 3);
+    width: math.div((var.$base-content-width - var.$column-space * 6), 3);
+    @include mix.mq-sp {
+        flex: 1 1 100%;
+        min-width: none;
+        margin: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
 .l-quaterColumn{
     flex: 1 0 0px;
     max-width: math.div( (var.$base-content-width - var.$column-space * 3), 4);
