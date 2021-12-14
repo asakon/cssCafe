@@ -1,0 +1,31 @@
+@use "../base/variables" as var;
+
+.Article {
+    &__text {
+        margin-bottom: var.$space-unit * 2;
+    }
+    &__image {
+        margin-bottom: var.$space-unit * 2;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.textList {
+    margin-bottom: var.$space-unit * 2;
+    margin-left: var.$space-unit * 2;
+    &__item {
+        list-style: disc;
+    }
+}
+
+.ThumbnailItem {
+    display: flex;
+    align-items: center;
+    padding-bottom: var.$space-unit;
+    &__thumb {
+        margin-right: var.$space-unit;
+        width: 80px;
+        height: 80px;
+    }
+}

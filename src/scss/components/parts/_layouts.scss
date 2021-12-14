@@ -79,3 +79,31 @@
     max-width: 100%;
     max-height: 100%;
 }
+
+.l-content {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 var.$base-content-width;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: var.$base-content-width;
+    @include mix.mq-sp {
+        flex-direction: column;
+    }
+}
+
+.l-main {
+    flex: 0 2 auto;
+    margin: 0 var.$space-unit;
+    max-width: 865px;
+}
+
+.l-sub {
+    flex: 0 0 275px;
+    margin: 0 var.$space-unit;
+    margin-left: var.$column-space;
+    @include mix.mq-sp {
+        flex: 1 1 100%;
+        margin: var.$space-unit;
+    }
+}
