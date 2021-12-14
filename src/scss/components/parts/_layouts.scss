@@ -43,7 +43,7 @@
     width: math.div((var.$base-content-width - var.$column-space * 6), 3);
     @include mix.mq-sp {
         flex: 1 1 100%;
-        min-width: none;
+        max-width: none;
         margin: 0;
     }
     &:last-child {
