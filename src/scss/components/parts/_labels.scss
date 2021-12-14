@@ -38,3 +38,22 @@
     @include mix.menu-font;
     font-size: 26px;
 }
+
+// 記事の見出し
+.articleLabelL {
+    padding: 0 0 20px;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.articleLabelM {
+    padding: 40px 0 20px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.articleLabelS {
+    padding: 40px 0 20px;
+    font-weight: normal;
+    font-size: 26px;
+}
